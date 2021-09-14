@@ -1,6 +1,8 @@
 package net.entity;
 
-public class ResourceEntity {
+import java.io.Serializable;
+
+public class ResourceEntity implements Serializable {
     String name;
     int id;
 

@@ -38,7 +38,7 @@ class ResourceManager {
             val clazz: Class<*> = R.mipmap::class.java
             for (field in clazz.fields) {
                 val name = field.name
-                if (name.startsWith("ic")) {
+                if (name.startsWith("ic") || name.startsWith("ho")) {
                     continue
                 }
                 val id = context.resources.getIdentifier(name, "mipmap", context.packageName)
